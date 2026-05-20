@@ -1,14 +1,1 @@
-# Project Cycle 3 - Two-Sample Inference
-
-- **Group Number:** 9
-- **Members:** [113370202方立謙], [113370224 巴以甯][cite: 1]
-- **Research Question:** Is the mean body weight different between male and female students? (Question 4)
-- **Variables:**
-    - **Group Variable:** `WhatIsYourSex` (1 = Male, 2 = Female)
-    - **Response Variable:** `HowMuchDoYouWeighWithoutShoesInKG` (Quantitative)
-- **Key Method:** Welch's Two-Sample t-test
-- **Assumptions:** 
-    - The two groups are independent.
-    - Large sample size (n > 30) justifies the use of t-test.
-    - We do not assume equal variance (Welch's).
-- **Conclusion:** With a P-value < 0.001, we reject the null hypothesis. There is a significant difference in mean body weight between male and female students.
+Project Cycle 3 - Two-Sample InferenceGroup Number: 9Members: 113370202 方立謙, 113370224 巴以甯Research Question: Is there a statistically significant difference in the mean body weight between male and female students?Variables:Group Variable: WhatIsYourSex (1 = Female, 2 = Male) (修正這裡)Response Variable: HowMuchDoYouWeighWithoutShoesInKG (Quantitative)Key Method: Welch's Two-Sample $t$-test (unpooled, unequal variances)Assumptions:The two gender groups are independent.Large sample sizes ($N_{\text{Male}}=5,510$, $N_{\text{Female}}=6,166$) satisfy the Central Limit Theorem (CLT) for the $t$-test.Equal variance is not assumed (handled by Welch's adjustment).Results & Conclusion:With $t = 44.62$ and a P-value < 0.0001, we strongly reject the null hypothesis ($H_0$).There is a highly significant difference in mean body weight. On average, male students ($68.70\text{ kg}$) weigh more than female students ($60.23\text{ kg}$).We are 95% confident that the true mean difference in weight lies between $8.10\text{ kg}$ and $8.84\text{ kg}$.
